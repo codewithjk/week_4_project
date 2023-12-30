@@ -1,0 +1,58 @@
+<%- include('head')-%>
+<section>
+  <div class="background vh-100"></div>
+</section>
+<div class="d-flex justify-content-between px-5">
+  <img src="/static/Netflix.png" alt="img" height="50px" width="100px" />
+
+  <button
+    class="btn btn-danger text-white fs-5 m-2 px-3 fs-5"
+    type="button"
+    id="btn-login"
+  >
+    Sign In
+  </button>
+</div>
+<div class="mx-auto text-center text-white my-5">
+  <h1 class="fw-bolder">Unlimited movies, TV shows and more</h1>
+  <h4 class="fs-2">Watch anywhere. Cancel anytime.</h4>
+  <p class="fs-4">
+    Ready to watch? Enter your email to create or restart your membership.
+  </p>
+  <div class="px-5 mx-auto mt-5">
+    <form action="" class="fs-3 text-white">
+      <input
+        class="bg-transparent text-white rounded pl-5"
+        type="text"
+        placeholder="Email address"
+      />
+      <div class="d-flex justify-content-center align-items-center">
+        <button
+          class="btn btn-danger text-white m-2 px-3 fs-5 d-flex justify-content-center align-items-center w-fit rounded"
+        >
+          Get Started
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-mirrorinrtl="true"
+            class="default-ltr-cache-0 e1mhci4z1"
+            data-name="ChevronRight"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('foot')-%>

@@ -1,0 +1,63 @@
+<%- include('head')-%>
+<section>
+  <div class="background"></div>
+  <div class="main py-5">
+    <div class="container w-100">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5 bg-black p-5 text-white rounded-2">
+          <h1 class="">Sign in</h1>
+          <form action="/login" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                name="email"
+                type="email"
+                class="w-100 bg-secondary fs-5 p-2 rounded border-0"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <% if (locals.invalidEmail) { %>
+            <p class="text-danger"><%= invalidEmail %></p>
+            <% } %>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                name="password"
+                type="password"
+                class="w-100 bg-secondary fs-5 p-2 rounded border-0"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <% if (locals.invalidPassword) { %>
+            <p class="text-danger"><%= invalidPassword %></p>
+            <% } %>
+
+            <!-- <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div> -->
+            <button
+              type="submit"
+              class="btn btn-danger w-100 fs-5 p-2 rounded border-0"
+            >
+              Sign In
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('foot')-%>

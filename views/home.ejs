@@ -1,0 +1,19 @@
+<%- include('head')-%>
+<section class="h-100 w-100 bg-black">
+  <div class="d-flex justify-content-between px-5">
+    <img src="/static/Netflix.png" alt="img" height="50px" width="100px" />
+
+    <button
+      id="btn-logout"
+      class="btn btn-danger text-white fs-5 m-2"
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+  <div class="container">
+    <% data.forEach((element,index) => { %> <%- include('genreRow', {movies:
+    element,title:genre[index].name}); %> <%}); %>
+  </div>
+</section>
+<%- include('foot')-%>

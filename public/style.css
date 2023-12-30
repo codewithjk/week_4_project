@@ -1,0 +1,30 @@
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+img {
+  object-fit: cover;
+}
+a {
+  text-decoration-color: aliceblue !important;
+  text-decoration: none !important;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5) !important; */
+  background-image: url("/static/background.jpg");
+  background-repeat: repeat;
+  filter: brightness(0.5);
+}
+.ellipsis-lines-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  text-overflow: ellipsis;
+}
